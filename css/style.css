@@ -1,0 +1,248 @@
+@keyframes fadeIn{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+@keyframes linkFade{
+	0%{opacity: 1;}
+	100%{opacity: 0.2;}
+}
+/*Tag Inits*/
+body{
+	background-color: #F3F3F3;
+	-webkit-animation: fadeIn 1s; /* Safari, Chrome and Opera > 12.1 */
+	-moz-animation: fadeIn 1s; /* Firefox < 16 */
+	-ms-animation: fadeIn 1s; /* Internet Explorer */
+	-o-animation: fadeIn 1s; /* Opera < 12.1 */
+	animation: fadeIn 1s;
+}
+/*NavBar*/
+.navBar{
+	display: flex;
+	justify-content: space-between;
+	padding: 2rem;
+
+	background-color: #F3F3F3;
+}
+.navBar img{
+	width: 15rem;
+	margin-top: 1rem;
+	margin-left: 1rem;
+	margin-right: 20rem;
+}
+@media (max-width: 400px) {
+	.links{
+		display:none;
+	}
+}
+#links{
+	display: none;
+	padding-top: 1.75rem;
+}
+
+#links:target{
+	display: flex;
+	flex-direction: column;
+
+	position:fixed;
+	z-index: 100;
+	top: 9rem;
+
+	background-color: #33C3F0;
+	padding: 1rem;
+	border-radius: 4px;
+
+	-webkit-animation: fadeIn 1s; /* Safari, Chrome and Opera > 12.1 */
+   	-moz-animation: fadeIn 1s; /* Firefox < 16 */
+	-ms-animation: fadeIn 1s; /* Internet Explorer */
+	-o-animation: fadeIn 1s; /* Opera < 12.1 */
+	animation: fadeIn 1s;
+}
+.hamburger{
+	margin-top: 2rem;
+	margin-left: auto;
+	float:right;
+}
+.logoPadder{
+	padding-left: 6rem;
+}
+/*Profile Block Styling*/
+.profileBlock {
+	padding: 1rem;
+	background-image:url("../images/profile.jpg");
+	background-position: center;
+	background-size: cover;
+	height:71rem;
+}
+.profileBlockText{
+	margin-top: 30%;
+	color: white;
+}
+.profileBlock h1{
+	text-align: left;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+.profileBlockBG p{
+	margin-top: 20%;
+	text-align: justify;
+	color: #FFFFFF;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+/*About Me*/
+#about{
+	text-align: center;
+}
+#about h1{
+	padding: 1rem;
+}
+.aboutTile{
+	background-image:url("../images/about.jpg");
+	background-position: center;
+	background-size: cover;
+	height: 72rem;
+}
+@media (max-width: 550px) {
+	.aboutTile{
+		height: 15rem;
+		width: 100%;
+	}
+}
+
+/*Skills*/
+#skills{
+	text-align: center;
+}
+#skills h1{
+	padding: 1rem;
+}
+progress{
+	height: 1rem;
+}
+.skillSlot{
+	padding: 1rem;
+}
+.skillsTile{
+	background-image:url("../images/skills.jpg");
+	background-position: center;
+	background-size: cover;
+	height: 72rem;
+}
+@media (max-width: 550px) {
+	.skillsTile{
+		height: 15rem;
+		width: 100%;
+	}
+}
+
+/*Works*/
+#works{
+	text-align: center;
+}
+#works h1{
+	padding: 1rem;
+}
+#works p{
+	font-size: 85%;
+}
+.worksTile{
+	background-image:url("../images/works.jpg");
+	background-position: center;
+	background-size: cover;
+	height: 72rem;
+}
+@media (max-width: 550px) {
+	.worksTile{
+		height: 15rem;
+		width: 100%;
+	}
+}
+
+/*Resume*/
+#resume{
+	text-align: center;
+}
+#resume h1{
+	padding: 1rem;
+}
+.resumeTile{
+	background-image:url("../images/resume.jpg");
+	background-position: center;
+	background-size: cover;
+	height: 72rem;
+}
+@media (max-width: 550px) {
+	.resumeTile{
+		height: 15rem;
+		width: 100%;
+	}
+}
+
+/*Contact*/
+#contact{
+	text-align: center;
+}
+#contact h1{
+	padding: 1rem;
+}
+.contactTile{
+	background-image:url("../images/contact.jpg");
+	background-position: center;
+	background-size: cover;
+	height: 72rem;
+}
+@media (max-width: 550px) {
+	.contactTile{
+		height: 15rem;
+		width: 100%;
+	}
+}
+.bigLink{
+	font-size: 10rem;
+	padding-right: 1rem;
+}
+@media (max-width: 550px) {
+	.bigLink{
+		font-size: 7rem;
+	}
+}
+
+/*Card like tiles*/
+
+.tileTitle {
+	margin-top: 50%;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+@media (max-width: 550px) {
+	.tileTitle {
+		margin-top: 17.5%;
+		color: #FFFFFF;
+		font-weight: bold;
+	}
+}
+.card{
+	margin-top: 1rem;
+	margin-bottom: 5rem;
+	padding: 2rem;
+	min-height: 75rem;
+	box-shadow: 0px 2.5px 2.5px rgba(0,0,0,0.1);
+	background-color: #FFFFFF;
+}
+.paddingKiller{
+	margin: 0;
+}
+.leftAligner{
+	text-align: left;
+}
+.rightAligner{
+	text-align: right;
+}
+.justifyAligner{
+	text-align: justify;
+}
+/*Footer*/
+.footer{
+	text-align: center;
+}
